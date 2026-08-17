@@ -14,11 +14,29 @@ This repository will be the canonical design methodology and reusable agent skil
 - UI UX Pro Max
 - Hallmark
 
-The repository will not merely collect those projects. It will resolve their overlaps and conflicts into one coherent operating system that can be used for websites, application interfaces, components, design systems, brand surfaces, reading experiences, audits, redesigns, and production verification.
+The repository will not merely collect those projects. It will resolve their overlaps and conflicts into one coherent operating system for websites, application interfaces, components, design systems, brand surfaces, reading experiences, audits, redesigns, and production verification.
 
 The first named consumer is `innerself.love`, but the architecture must remain project-neutral and reusable across future work.
 
-## 2. Goals
+Interactive web and application design are the first implementation priority. Non-interactive visual artifacts such as presentations, reports, diagrams, and social graphics may reuse the system's product-truth, hierarchy, perception, anti-slop, token, and verification modules. Their medium-specific production rules remain delegated to the relevant artifact skill rather than being duplicated here.
+
+## 2. Activation rule
+
+For future work, agents must load the live `skills/design/SKILL.md` from this repository before acting whenever the task concerns or would materially benefit from:
+
+- UI or UX design;
+- frontend visual implementation;
+- website or application redesign;
+- long-form reading experience;
+- visual hierarchy, typography, color, layout, motion, or interaction design;
+- component design or component-state review;
+- design-system creation or extraction;
+- accessibility, responsiveness, or visual production audits;
+- brand-surface or visual-artifact decisions covered by the reusable modules.
+
+The live repository is authoritative over remembered copies. The agent must recover the current repository head rather than assuming a previous conversation contains the latest rules.
+
+## 3. Goals
 
 The system must:
 
@@ -27,29 +45,31 @@ The system must:
 3. Produce designs with a clear point of view rather than generic AI styling.
 4. Use searchable design intelligence without allowing a catalog to dictate the design.
 5. Detect structural and visual AI clichés before shipping.
-6. Enforce accessibility, responsive behavior, interaction states, performance, and factual integrity as production requirements.
+6. Enforce accessibility, responsive behavior, applicable interaction states, performance, and factual integrity as production requirements.
 7. Persist project-specific product and design decisions so later agents do not rediscover them.
 8. Provide one canonical skill source with generated or installed adapters for Codex, Claude Code, OpenCode, Cursor-compatible agents, and generic agent runtimes.
 9. Pin upstream versions and make upstream drift visible without silently changing canonical behavior.
 10. Remain useful when optional upstream tooling is inaccessible.
+11. Continue automatically through routine design decisions; request human intervention only when materially competing directions remain, product truth is unavailable, or destructive changes require authorization.
 
-## 3. Non-goals
+## 4. Non-goals
 
 The repository will not:
 
-- Merge the four upstream repositories wholesale.
-- Treat any upstream aesthetic preference as universally correct.
-- replace a project's established visual identity merely because a catalog recommends another style.
-- silently rewrite user-supplied arguments, copy, claims, testimonials, or metrics.
-- invent proof, testimonials, customer logos, statistics, or capabilities to complete a layout.
-- vendor font binaries.
-- require a particular frontend framework.
-- use unlimited self-critique or polishing loops.
-- delete or replace production structures without explicit authorization.
+- merge the four upstream repositories wholesale;
+- treat any upstream aesthetic preference as universally correct;
+- replace a project's established visual identity merely because a catalog recommends another style;
+- silently rewrite user-supplied arguments, copy, claims, testimonials, or metrics;
+- invent proof, testimonials, customer logos, statistics, or capabilities to complete a layout;
+- vendor font binaries;
+- require a particular frontend framework;
+- use unlimited self-critique or polishing loops;
+- delete or replace production structures without explicit authorization;
+- force a user-approval pause when one direction is clearly superior and no destructive or factual uncertainty remains.
 
-## 4. Upstream roles
+## 5. Upstream roles
 
-### 4.1 Impeccable: workflow and craft architecture
+### 5.1 Impeccable: workflow and craft architecture
 
 Impeccable contributes:
 
@@ -62,7 +82,7 @@ Impeccable contributes:
 
 Its exact runtime, command implementation, and complete reference corpus will not become the canonical architecture.
 
-### 4.2 Perception-First Design: ordered diagnosis and ethical constraints
+### 5.2 Perception-First Design: ordered diagnosis and ethical constraints
 
 Perception-First Design contributes an ordered dependency stack:
 
@@ -82,7 +102,7 @@ The synthesis also adopts three ethical tests:
 
 The repository will use an original summary and operational interpretation rather than copying the upstream framework prose. Attribution and the upstream CC BY-SA 4.0 terms must remain explicit. The Perception-First Design name and trademark must not be presented as the name of this repository's original system.
 
-### 4.3 UI UX Pro Max: searchable design intelligence
+### 5.3 UI UX Pro Max: searchable design intelligence
 
 UI UX Pro Max contributes:
 
@@ -93,9 +113,9 @@ UI UX Pro Max contributes:
 - design dials for variance, motion, and density;
 - explicit validation of responsive text behavior and compact UI.
 
-Its search results are evidence and options. They cannot override project truth, the perceptual requirements, established brand constraints, accessibility, or the user brief.
+Its search results are evidence and options. They cannot override project truth, perceptual requirements, established brand constraints, accessibility, or the user brief.
 
-### 4.4 Hallmark: anti-slop and structural-diversity gates
+### 5.4 Hallmark: anti-slop and structural-diversity gates
 
 Hallmark contributes:
 
@@ -103,18 +123,31 @@ Hallmark contributes:
 - structural variety, not merely palette variation;
 - factual-copy protection and prohibition of fabricated proof;
 - token discipline;
-- complete interactive states for components;
+- complete applicable interaction-state coverage;
 - responsive verification at narrow and intermediate widths;
 - preservation of routes, component ownership, information architecture, and implementation boundaries during refinement;
 - a pre-delivery self-critique that triggers at most one bounded revision pass.
 
 Its aesthetic prohibitions are heuristics, not constitutional law. Deliberate, coherent, brief-supported deviations are permitted and must be documented. Within one product, consistency is more important than forcing every surface to look unrelated; structural diversification applies primarily across unrelated projects and when an existing project has fallen into a repeated generic pattern.
 
-## 5. Authority and conflict resolution
+## 6. Integration modes
+
+Each upstream relationship must be classified in `UPSTREAMS.lock.json`:
+
+| Source | Canonical relationship |
+|---|---|
+| Impeccable | Conceptual synthesis; optional adapter only where a narrowly useful command can be invoked without importing its entire runtime. |
+| Perception-First Design | Conceptual diagnostic and ethical layer with attribution; no copied canonical framework prose. |
+| UI UX Pro Max | Conceptual synthesis plus optional executable search adapter against a pinned source revision or CLI release. |
+| Hallmark | Conceptual anti-slop and structural-review layer; optional adapter only where results can be normalized through this repository's authority rules. |
+
+Optional executable adapters may enrich a result, but no upstream runtime is required for the canonical workflow to function.
+
+## 7. Authority and conflict resolution
 
 When instructions conflict, use this precedence order:
 
-1. Explicit user instruction and supplied factual/content truth.
+1. Explicit user instruction and supplied factual or content truth.
 2. The project's durable `PRODUCT.md`, `DESIGN.md`, and surface brief.
 3. Functional correctness, accessibility, safety, ethics, and legal constraints.
 4. Lower-layer perceptual requirements before higher-layer requirements.
@@ -132,8 +165,9 @@ When instructions conflict, use this precedence order:
 - **Cross-project variety versus within-project consistency:** vary across unrelated projects; preserve a coherent family within one product.
 - **User copy versus layout convenience:** copy wins. Change the layout rather than silently shortening, sanitizing, or replacing the argument.
 - **Aesthetic polish versus factual integrity:** factual integrity wins absolutely.
+- **Clearly superior direction versus approval ritual:** choose the superior direction and continue. Ask only when trade-offs are genuinely close or require a human preference.
 
-## 6. Canonical workflow
+## 8. Canonical workflow
 
 ### Stage 0 — Recover current state
 
@@ -158,7 +192,8 @@ Classify both scope and mode.
 - page or route;
 - section;
 - component;
-- audit or study.
+- audit or study;
+- non-interactive visual artifact using the reusable modules.
 
 **Mode:**
 
@@ -175,9 +210,9 @@ Load or create durable project context:
 
 - `PRODUCT.md` — audience, jobs, product truth, claims, constraints, risks, and success criteria;
 - `DESIGN.md` — visual principles, tokens, typography, color, imagery, motion, component voice, and intentional deviations;
-- `SURFACE.md` — mode, task, primary user path, content hierarchy, page-specific constraints, and deviations from `DESIGN.md`.
+- one file under `surfaces/` — mode, task, primary user path, content hierarchy, page-specific constraints, and deviations from `DESIGN.md`.
 
-A narrow refinement may proceed from incumbent implementation evidence, but the absence of durable context should be reported and repaired as part of project hardening rather than guessed silently.
+A narrow refinement may proceed from incumbent implementation evidence. The absence of durable context should be reported and repaired as part of project hardening rather than filled with invented product facts.
 
 ### Stage 3 — Perceptual diagnosis before solutions
 
@@ -204,7 +239,7 @@ Candidates must differ in structure or experience, not merely color. Each candid
 - accessibility and performance risk;
 - generic-AI-pattern risk.
 
-The chosen direction is persisted in `DESIGN.md` or the relevant surface override.
+When one candidate clearly dominates, select it and continue. Present a human choice only when materially competing candidates survive. Persist the chosen direction in `DESIGN.md` or the relevant surface override.
 
 ### Stage 5 — Implement within explicit boundaries
 
@@ -215,7 +250,7 @@ Implementation rules:
 - preserve supplied content and claims unless edits are explicitly authorized;
 - preserve routes and component ownership during refinement;
 - avoid deleting production files without explicit authorization;
-- provide all required component states;
+- provide all interaction states applicable to the component's semantics;
 - use one coherent icon voice per product;
 - use real assets or clearly marked placeholders rather than fabricated proof;
 - support reduced motion and keyboard operation;
@@ -230,8 +265,8 @@ Run the following gates in order:
 3. **Perceptual gate:** L0 through L4 requirements pass, with lower-layer failures blocking downstream approval.
 4. **Accessibility gate:** semantics, labels, focus order, visible focus, contrast, keyboard use, reduced motion, and non-color state communication.
 5. **Responsive gate:** verify at 320, 375, 414, 768, 1024, and 1440 CSS pixels where applicable; ensure zoom and text scaling do not clip essential content.
-6. **State gate:** interactive components cover default, hover where applicable, focus-visible, active, disabled, loading, error, and success states.
-7. **Anti-slop gate:** check both structural and visual generic-AI signatures, while respecting documented intentional deviations.
+6. **State gate:** every interactive component documents and implements applicable states. Default, focus-visible, active, and disabled are normally required. Hover applies where a fine pointer exists. Loading, error, and success are required for asynchronous or stateful actions and may be marked not applicable for purely navigational or inert controls.
+7. **Anti-slop gate:** check both structural and visual generic-AI signatures while respecting documented intentional deviations.
 8. **Performance gate:** avoid unnecessary blocking assets, layout instability, oversized media, and interaction jank.
 9. **Consistency gate:** confirm tokens, typography, spacing, imagery, and component behavior remain coherent with the product system.
 
@@ -257,7 +292,7 @@ After completion:
 - update pinned upstream metadata only through the explicit synchronization workflow;
 - keep project-specific lessons separate from universal rules until they survive reuse.
 
-## 7. Repository architecture
+## 9. Repository architecture
 
 ```text
 design/
@@ -301,7 +336,10 @@ design/
 │   └── innerself-love/
 │       ├── PRODUCT.md
 │       ├── DESIGN.md
-│       ├── SURFACES.md
+│       ├── surfaces/
+│       │   ├── README.md
+│       │   ├── homepage.md
+│       │   └── article.md
 │       └── DECISION-LOG.md
 ├── tests/
 │   ├── policy/
@@ -316,7 +354,7 @@ design/
 
 `skills/design/SKILL.md` and the files under `core/` are canonical. Platform adapters must be generated or installed from those sources. Generated copies must not be edited manually. CI must detect adapter drift.
 
-## 8. Command surface
+## 10. Command surface
 
 The canonical skill will support these conceptual operations:
 
@@ -338,7 +376,7 @@ The canonical skill will support these conceptual operations:
 
 The implementation may expose platform-specific command syntax, but behavior and precedence remain canonical here.
 
-## 9. Upstream pinning and updates
+## 11. Upstream pinning and updates
 
 `UPSTREAMS.lock.json` will record, for every source:
 
@@ -362,7 +400,7 @@ An upstream update follows this sequence:
 6. update attribution and lock metadata together;
 7. run policy and smoke tests.
 
-## 10. Licensing and attribution
+## 12. Licensing and attribution
 
 - Impeccable is Apache-2.0.
 - UI UX Pro Max is MIT.
@@ -377,7 +415,7 @@ No repository-wide open-source license is currently declared. Until the owner de
 
 Font binaries will not be copied from upstream repositories. Font recommendations may reference licensed public fonts, and each consuming project remains responsible for its own font loading and license compliance.
 
-## 11. Error and degraded-mode behavior
+## 13. Error and degraded-mode behavior
 
 ### Missing project context
 
@@ -385,7 +423,7 @@ Infer from the incumbent implementation when possible. Create or propose durable
 
 ### Conflicting source guidance
 
-Apply the authority order in Section 5 and record the decision when it materially affects the design system.
+Apply the authority order in Section 7 and record the decision when it materially affects the design system.
 
 ### Optional upstream tool unavailable
 
@@ -407,7 +445,11 @@ Preserve existing production files and choose an additive or in-place implementa
 
 Treat the implementation as evidence, not automatic authority. Classify the discrepancy as stale documentation, accidental drift, or intentional evolution before changing either side.
 
-## 12. Testing strategy
+### Medium-specific artifact rule unavailable
+
+Apply the reusable design modules, then defer production details to the relevant artifact-specific skill. Do not improvise a replacement export or rendering workflow inside this repository.
+
+## 14. Testing strategy
 
 ### Policy tests
 
@@ -421,7 +463,9 @@ Tests must verify that the skill:
 - respects intentional deviations from anti-pattern guidance;
 - requires explicit authorization for destructive file changes;
 - limits visual QA to the bounded pass budget;
-- persists project truth separately from universal guidance.
+- persists project truth separately from universal guidance;
+- continues automatically when one direction clearly dominates;
+- loads the live canonical skill for relevant future design work.
 
 ### Fixture scenarios
 
@@ -430,13 +474,14 @@ At minimum:
 1. a long-form reading site such as `innerself.love`;
 2. a persuasive landing page;
 3. an expert dashboard where option density is legitimate;
-4. a single interactive component requiring all states;
+4. a single interactive component with semantically applicable states;
 5. an established branded project requesting refinement;
 6. an explicit redesign request;
 7. a deliberately brutalist or maximalist brief that should not be normalized;
 8. a project containing unsupported metrics that the system must not repeat as fact;
-9. an inaccessible upstream catalog, requiring degraded mode;
-10. two unrelated projects that should not receive the same generic macrostructure.
+9. an inaccessible upstream catalog requiring degraded mode;
+10. two unrelated projects that should not receive the same generic macrostructure;
+11. a non-interactive visual artifact that reuses the canonical modules but delegates medium-specific production.
 
 ### Structural tests
 
@@ -460,7 +505,7 @@ A temporary fixture project will run:
 6. decision persistence;
 7. adapter installation in an isolated destination.
 
-## 13. `innerself.love` adoption
+## 15. `innerself.love` adoption
 
 The repository will include a project profile for `innerself.love` after the core architecture exists.
 
@@ -478,14 +523,14 @@ The profile must treat it primarily as a **Read** surface, with possible **Persu
 
 The profile will be based on evidence from the live site and its source repository. It will not assume that a generic meditation, therapy, or wellness palette is appropriate.
 
-## 14. Acceptance criteria
+## 16. Acceptance criteria
 
 The architecture is implemented when:
 
 1. the repository contains the canonical core documents and skill;
 2. all four upstream sources are attributed and pinned;
 3. a deterministic installer produces usable adapters without manual editing;
-4. policy tests cover precedence, truth, argument preservation, perceptual ordering, anti-slop exceptions, and destructive-change safety;
+4. policy tests cover precedence, truth, argument preservation, perceptual ordering, anti-slop exceptions, automatic continuation, and destructive-change safety;
 5. smoke tests pass in an isolated fixture;
 6. the `innerself.love` project profile exists and points future work to the canonical workflow;
 7. README and agent instructions direct all relevant design work through this repository;
