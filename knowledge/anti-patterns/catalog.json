@@ -1,0 +1,82 @@
+[
+  {
+    "id": "integrity-fabricated-proof",
+    "domain": "anti-pattern",
+    "title": "Fabricated proof-shaped content",
+    "keywords": ["metric", "testimonial", "logo", "proof", "claim", "trust"],
+    "modes": ["persuade", "read", "operate", "experience"],
+    "stacks": ["web", "native"],
+    "guidance": ["Use supplied or independently verified proof only", "Mark an unresolved proof slot visibly or change the structure"],
+    "avoid": ["Plausible invented numbers", "Anonymous testimonials written by the designer"]
+  },
+  {
+    "id": "integrity-argument-compression",
+    "domain": "anti-pattern",
+    "title": "Argument compressed for layout convenience",
+    "keywords": ["copy", "argument", "shorten", "sanitize", "card", "fit"],
+    "modes": ["read", "persuade"],
+    "stacks": ["web", "ghost"],
+    "guidance": ["Preserve meaning force qualifications and idiolect", "Change measure disclosure or page rhythm instead of weakening content"],
+    "avoid": ["Generic summaries substituted without authorization", "Deleting inconvenient qualifications"]
+  },
+  {
+    "id": "visual-generic-wellness",
+    "domain": "anti-pattern",
+    "title": "Generic wellness softness",
+    "keywords": ["wellness", "pastel", "calm", "meditation", "therapy", "serenity"],
+    "modes": ["read", "persuade"],
+    "stacks": ["web"],
+    "guidance": ["Derive warmth and calm from the specific method and audience", "Let evidence boundaries and author voice carry trust"],
+    "avoid": ["Stock meditation poses", "Pastel gradients used as a substitute for credibility"]
+  },
+  {
+    "id": "structure-template-rhythm",
+    "domain": "anti-pattern",
+    "title": "Genre-blind landing-page rhythm",
+    "keywords": ["hero", "features", "cards", "cta", "footer", "template"],
+    "modes": ["persuade", "read"],
+    "stacks": ["web"],
+    "guidance": ["Derive section order from the user's mental questions", "Vary structure across unrelated products while preserving within-product family"],
+    "avoid": ["Hero then three equal cards then CTA by default", "Generic navigation labels unrelated to user goals"]
+  },
+  {
+    "id": "structure-nested-containment",
+    "domain": "anti-pattern",
+    "title": "Containment without semantic reason",
+    "keywords": ["card", "nested", "container", "border", "panel", "grid"],
+    "modes": ["operate", "read", "persuade"],
+    "stacks": ["web", "native"],
+    "guidance": ["Use containment to express a real grouping or state boundary", "Prefer type spacing and alignment when a box adds no meaning"],
+    "avoid": ["Cards inside cards", "Uniform bordered panels for unrelated content"]
+  },
+  {
+    "id": "motion-decoration-everywhere",
+    "domain": "anti-pattern",
+    "title": "Motion as ambient decoration",
+    "keywords": ["animation", "scroll", "reveal", "hover", "motion", "stagger"],
+    "modes": ["persuade", "operate", "read", "experience"],
+    "stacks": ["web", "native"],
+    "guidance": ["Use motion to clarify state change sequence or spatial relationship", "Respect reduced-motion preferences and interrupted interactions"],
+    "avoid": ["Every section fading in", "Bounce or wobble with no semantic role"]
+  },
+  {
+    "id": "visual-mixed-icon-voice",
+    "domain": "anti-pattern",
+    "title": "Mixed icon voice",
+    "keywords": ["icon", "emoji", "lucide", "phosphor", "heroicons", "stroke"],
+    "modes": ["operate", "persuade", "read"],
+    "stacks": ["web", "native"],
+    "guidance": ["Choose one coherent icon family or custom system", "Treat icon weight and geometry as typography"],
+    "avoid": ["Emoji mixed with multiple icon libraries", "Icons used where a text label is clearer"]
+  },
+  {
+    "id": "process-catalog-first",
+    "domain": "anti-pattern",
+    "title": "Catalog-first styling",
+    "keywords": ["catalog", "theme", "style", "palette", "font", "recommendation"],
+    "modes": ["persuade", "operate", "read", "experience"],
+    "stacks": ["web", "native"],
+    "guidance": ["Establish product truth and L0 through L4 requirements before pattern search", "Use catalog results to compare options or fill implementation detail"],
+    "avoid": ["Selecting a visual style from industry category alone", "Replacing incumbent identity with the top search result"]
+  }
+]

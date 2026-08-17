@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-08-17",
+  "upstreams": [
+    {
+      "id": "impeccable",
+      "repository": "https://github.com/pbakaus/impeccable",
+      "default_branch": "main",
+      "pinned_commit": "5c5553b1d7f9e89bb833f9179cea681742a17720",
+      "observed_version": "4.1.1",
+      "license": "Apache-2.0",
+      "relationship": "conceptual synthesis with optional narrow adapters",
+      "selected_concepts": ["durable product and design context", "surface modes", "refinement versus redesign", "operation routing", "bounded verification"],
+      "reviewed_at": "2026-08-17"
+    },
+    {
+      "id": "perception-first-design",
+      "repository": "https://github.com/skovalik/perception-first-design",
+      "default_branch": "main",
+      "pinned_commit": "1704ff61c18872a66d969e860c9b6e45a8f50f16",
+      "observed_version": "3.6",
+      "license": "CC-BY-SA-4.0",
+      "relationship": "conceptual diagnostic and ethical layer",
+      "selected_concepts": ["ordered L0 through L4 diagnosis", "bottom-up requirement derivation", "dependency caps", "alignment sincerity and Golden Rule ethics"],
+      "reviewed_at": "2026-08-17"
+    },
+    {
+      "id": "ui-ux-pro-max",
+      "repository": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "default_branch": "main",
+      "pinned_commit": "a38d04c3d5c298c851dbe5e6ee1965ee3de42cb5",
+      "observed_version": "2.0",
+      "license": "MIT",
+      "relationship": "conceptual synthesis plus optional executable search adapter",
+      "selected_concepts": ["one-dominant-intent search", "separate design knowledge domains", "master design system and surface overrides", "variance motion and density dials", "resilient text layout"],
+      "reviewed_at": "2026-08-17"
+    },
+    {
+      "id": "hallmark",
+      "repository": "https://github.com/Nutlope/hallmark",
+      "default_branch": "main",
+      "pinned_commit": "13ac0ec7e148655948100b6396439e481361d690",
+      "observed_version": "1.1.0",
+      "license": "MIT",
+      "relationship": "conceptual anti-slop and structural-review layer",
+      "selected_concepts": ["structural variety", "factual-copy protection", "token discipline", "semantic state coverage", "responsive verification", "bounded pre-delivery critique"],
+      "reviewed_at": "2026-08-17"
+    }
+  ]
+}

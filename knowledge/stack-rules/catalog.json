@@ -1,0 +1,82 @@
+[
+  {
+    "id": "stack-ghost-long-form",
+    "domain": "stack",
+    "title": "Ghost long-form theme integration",
+    "keywords": ["ghost", "article", "theme", "long", "form", "reading"],
+    "modes": ["read", "persuade"],
+    "stacks": ["ghost"],
+    "guidance": ["Separate theme chrome from post-content typography", "Test editor-produced tables embeds captions and footnotes", "Preserve Ghost membership and navigation behavior during refinement"],
+    "avoid": ["CSS that assumes authored HTML shapes Ghost does not emit", "Replacing portable post content with theme-only markup"]
+  },
+  {
+    "id": "stack-web-responsive-text",
+    "domain": "stack",
+    "title": "Web responsive text resilience",
+    "keywords": ["responsive", "text", "zoom", "mobile", "overflow", "layout"],
+    "modes": ["read", "persuade", "operate", "experience"],
+    "stacks": ["web"],
+    "guidance": ["Allow grid and flex children to shrink with min-width zero", "Provide safe wrapping for long tokens", "Verify 200 percent zoom and user text scaling"],
+    "avoid": ["Essential text clipping", "Global overflow hidden that masks defects"]
+  },
+  {
+    "id": "stack-react-next-boundaries",
+    "domain": "stack",
+    "title": "React and Next.js rendering boundaries",
+    "keywords": ["react", "nextjs", "render", "client", "performance", "bundle"],
+    "modes": ["operate", "persuade", "read"],
+    "stacks": ["react", "nextjs"],
+    "guidance": ["Keep presentational components server-rendered when interaction does not require client state", "Co-locate state with the smallest interactive boundary", "Measure image and font effects on the first meaningful view"],
+    "avoid": ["Turning the whole route into a client component", "Animation libraries for a single CSS-capable transition"]
+  },
+  {
+    "id": "stack-html-token-discipline",
+    "domain": "stack",
+    "title": "HTML and CSS token discipline",
+    "keywords": ["html", "css", "tokens", "variables", "theme", "components"],
+    "modes": ["read", "persuade", "operate", "experience"],
+    "stacks": ["web", "html"],
+    "guidance": ["Define semantic roles before component-specific aliases", "Keep one source for type color spacing radius and motion values", "Document intentional one-off values"],
+    "avoid": ["Uncontrolled inline values", "Token names tied to one temporary color"]
+  },
+  {
+    "id": "stack-accessible-forms",
+    "domain": "stack",
+    "title": "Accessible form recovery",
+    "keywords": ["form", "error", "validation", "focus", "label", "recovery"],
+    "modes": ["operate", "persuade"],
+    "stacks": ["web", "native"],
+    "guidance": ["Keep persistent labels", "Connect field errors programmatically", "Move focus to an error summary only when it helps recovery", "Preserve entered values after failure"],
+    "avoid": ["Placeholder-only labels", "Color-only error state", "Clearing the form on server error"]
+  },
+  {
+    "id": "stack-reduced-motion",
+    "domain": "stack",
+    "title": "Reduced and interruptible motion",
+    "keywords": ["motion", "reduced", "animation", "interrupt", "state", "transition"],
+    "modes": ["operate", "persuade", "read", "experience"],
+    "stacks": ["web", "native"],
+    "guidance": ["Treat reduced motion as a coherent alternate behavior", "Ensure cancellation still lands in the correct semantic state", "Prefer transform and opacity when motion is justified"],
+    "avoid": ["Motion required to understand content", "Animation completion as the only state update"]
+  },
+  {
+    "id": "stack-localization-resilience",
+    "domain": "stack",
+    "title": "Localization and long-label resilience",
+    "keywords": ["localization", "translation", "long", "label", "rtl", "text"],
+    "modes": ["operate", "persuade", "read"],
+    "stacks": ["web", "native"],
+    "guidance": ["Test labels at expanded lengths", "Use logical properties when direction may change", "Let essential controls reflow rather than truncate silently"],
+    "avoid": ["Fixed widths based on English copy", "Direction-specific spacing baked into components"]
+  },
+  {
+    "id": "stack-component-semantic-states",
+    "domain": "stack",
+    "title": "Semantic component state coverage",
+    "keywords": ["component", "states", "hover", "focus", "loading", "success"],
+    "modes": ["operate", "persuade"],
+    "stacks": ["web", "native", "react"],
+    "guidance": ["Derive required states from interaction semantics", "Keep focus visible and programmatic state accurate", "Expose asynchronous progress and outcome without relying on color"],
+    "avoid": ["Mechanical state lists for inert elements", "Hover-only essential actions"]
+  }
+]

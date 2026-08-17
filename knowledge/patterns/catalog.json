@@ -1,0 +1,82 @@
+[
+  {
+    "id": "read-long-form",
+    "domain": "pattern",
+    "title": "Long-form reading spine",
+    "keywords": ["long", "form", "article", "reading", "editorial", "essay"],
+    "modes": ["read"],
+    "stacks": ["web", "ghost"],
+    "guidance": ["Keep the reading measure stable across the article", "Externalize article orientation with clear headings and local navigation", "Give tables citations and notes explicit narrow-screen behavior"],
+    "avoid": ["Compressing arguments into equal cards", "Decorative sidebars that compete with reading"]
+  },
+  {
+    "id": "persuade-evidence-first",
+    "domain": "pattern",
+    "title": "Evidence-first decision trail",
+    "keywords": ["landing", "evidence", "trust", "decision", "proof", "conversion"],
+    "modes": ["persuade"],
+    "stacks": ["web"],
+    "guidance": ["State the specific promise before asking for commitment", "Place real evidence at the point where doubt naturally appears", "Match CTA language to the commitment distance"],
+    "avoid": ["Invented proof bars", "A primary CTA before purpose is understandable"]
+  },
+  {
+    "id": "operate-workbench",
+    "domain": "pattern",
+    "title": "Task workbench",
+    "keywords": ["dashboard", "tool", "workspace", "task", "expert", "operate"],
+    "modes": ["operate"],
+    "stacks": ["web", "react", "nextjs"],
+    "guidance": ["Keep frequent controls visible", "Group by task and state rather than organizational ownership", "Preserve expert density while clarifying hierarchy"],
+    "avoid": ["Hiding expert controls to satisfy generic simplicity advice", "Marketing-page card rhythm inside the tool"]
+  },
+  {
+    "id": "trust-source-visible",
+    "domain": "pattern",
+    "title": "Source-visible trust hub",
+    "keywords": ["source", "visible", "safety", "method", "trust", "evidence"],
+    "modes": ["read", "persuade"],
+    "stacks": ["web", "ghost"],
+    "guidance": ["Expose scope boundaries near the claims they qualify", "Make evidence tests changelog and method logic navigable", "Use transparency as structure rather than a trust badge"],
+    "avoid": ["Hiding limitations in the footer", "Borrowed institutional authority"]
+  },
+  {
+    "id": "operate-guided-flow",
+    "domain": "pattern",
+    "title": "Bounded guided flow",
+    "keywords": ["guided", "flow", "trainer", "session", "steps", "safety"],
+    "modes": ["operate"],
+    "stacks": ["web", "react"],
+    "guidance": ["Keep current state and exit visible", "Make stop conditions more prominent as risk rises", "End with a small explicit completion state"],
+    "avoid": ["Progress pressure that overrides user hesitation", "Hiding escape or reorientation actions"]
+  },
+  {
+    "id": "experience-artifact-led",
+    "domain": "pattern",
+    "title": "Artifact-led experience",
+    "keywords": ["portfolio", "gallery", "showcase", "art", "experience", "immersive"],
+    "modes": ["experience"],
+    "stacks": ["web"],
+    "guidance": ["Let the work dominate the first meaningful view", "Keep orientation controls quiet but persistent", "Use motion only when it clarifies sequence or material"],
+    "avoid": ["Interface decoration that competes with the work", "Inaccessible hidden navigation"]
+  },
+  {
+    "id": "read-reference-library",
+    "domain": "pattern",
+    "title": "Reference library",
+    "keywords": ["docs", "reference", "library", "index", "research", "citations"],
+    "modes": ["read", "operate"],
+    "stacks": ["web"],
+    "guidance": ["Support browse and exact retrieval separately", "Keep taxonomy visible enough to build a mental map", "Preserve dense option sets for expert readers"],
+    "avoid": ["Replacing a real taxonomy with a small marketing menu", "Search as the only orientation mechanism"]
+  },
+  {
+    "id": "persuade-letter-close",
+    "domain": "pattern",
+    "title": "Editorial letter close",
+    "keywords": ["newsletter", "author", "subscription", "editorial", "letter", "close"],
+    "modes": ["persuade", "read"],
+    "stacks": ["web", "ghost"],
+    "guidance": ["Close in the established author voice", "Explain what the reader receives and what support enables", "Keep the subscription action distinct from article conclusions"],
+    "avoid": ["Generic four-column SaaS footer", "Interrupting the argument with repeated modal asks"]
+  }
+]

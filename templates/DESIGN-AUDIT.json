@@ -1,0 +1,19 @@
+{
+  "surface": {"mode": "read", "scope": "page"},
+  "claims": [],
+  "content_changes": [],
+  "perceptual_layers": [
+    {"layer": "L0", "status": "review", "evidence": ""},
+    {"layer": "L1", "status": "review", "evidence": ""},
+    {"layer": "L2", "status": "review", "evidence": ""},
+    {"layer": "L3", "status": "review", "evidence": ""},
+    {"layer": "L4", "status": "review", "evidence": ""}
+  ],
+  "components": [],
+  "responsive": {"checked_widths": [], "zoom_percent": 100, "text_scaling_checked": false},
+  "accessibility": {"semantics": false, "labels": false, "focus_order": false, "visible_focus": false, "contrast": false, "keyboard": false, "reduced_motion": false, "non_color_state": false},
+  "deviations": [],
+  "performance": {"blocking_assets_checked": false, "layout_shift_checked": false, "interaction_latency_checked": false},
+  "consistency": {"tokens": false, "typography": false, "spacing": false, "icon_voice": false, "component_behavior": false},
+  "verification": {"inspection_passes": 0}
+}
