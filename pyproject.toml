@@ -1,0 +1,13 @@
+[build-system]
+requires = []
+build-backend = ""
+
+[project]
+name = "integrated-design-os"
+version = "0.1.0"
+description = "A repository-native design operating system for agentic UI and UX work."
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+design-os = "design_os.cli:main"
