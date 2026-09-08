@@ -78,5 +78,15 @@
     "stacks": ["web", "native", "react"],
     "guidance": ["Derive required states from interaction semantics", "Keep focus visible and programmatic state accurate", "Expose asynchronous progress and outcome without relying on color"],
     "avoid": ["Mechanical state lists for inert elements", "Hover-only essential actions"]
+  },
+  {
+    "id": "stack-apps-script-survey-native-hosting",
+    "domain": "stack",
+    "title": "Google Apps Script survey native hosting",
+    "keywords": ["survey", "form", "google", "apps", "script", "htmlservice", "sheets", "hosting", "web", "app", "deployment"],
+    "modes": ["operate", "persuade"],
+    "stacks": ["web", "html", "apps-script", "google-sheets"],
+    "guidance": ["Before adding separate hosting, inventory the platform-native deployment surfaces already present in the project", "For surveys already using Google Apps Script or Google Sheets, evaluate an Apps Script HTMLService Web App as the default: keep HTML, CSS, and JavaScript in the Apps Script project, serve the UI from doGet, and use google.script.run or server functions for submission", "Choose separate hosting only when a concrete requirement is unmet, such as custom-domain or SEO needs, traffic or performance scale, unsupported runtime capabilities, authentication, security or compliance constraints, provider quotas or SLA, or portability requirements", "Prefer the architecture with fewer independently deployed layers when user-visible requirements and operational constraints are otherwise equivalent"],
+    "avoid": ["Assuming custom HTML implies a separate VPS or static host", "Adding a frontend host plus API boundary when the existing Apps Script deployment surface already satisfies the survey", "Choosing platform-native hosting despite a verified requirement it cannot meet"]
   }
 ]
