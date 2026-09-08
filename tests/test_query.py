@@ -29,6 +29,15 @@ class QueryTests(unittest.TestCase):
         )
         self.assertEqual("stack-react-next-boundaries", results[0].entry_id)
 
+    def test_apps_script_survey_query_prefers_native_hosting_rule(self) -> None:
+        results = search_catalog(
+            "survey Apps Script hosting",
+            domain="stack",
+            stack="apps-script",
+            root=ROOT / "knowledge",
+        )
+        self.assertEqual("stack-apps-script-survey-native-hosting", results[0].entry_id)
+
     def test_ties_have_stable_id_order(self) -> None:
         with tempfile.TemporaryDirectory() as temp_dir:
             root = pathlib.Path(temp_dir)
