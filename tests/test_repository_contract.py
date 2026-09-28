@@ -70,6 +70,7 @@ class RepositoryContractTests(unittest.TestCase):
             ("CI-09", "Neither a plausible reading nor the owner's rejection changes a measured result"),
             ("CI-09", "There is no minimum number of findings."),
             ("CI-10", "Before sending, compare what you are about to say with what you already said on the same topic."),
+            ("CI-11", "Before delivering a critique or audit of the owner's design, a report about what a brief, research, or source says, copy with facts the owner will publish, or a claim that something was verified or passes, list every checkable claim"),
         )
         for check_id, anchor in anchors:
             with self.subTest(check=check_id, anchor=anchor):
