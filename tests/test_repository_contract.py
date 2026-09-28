@@ -48,6 +48,38 @@ class RepositoryContractTests(unittest.TestCase):
             with self.subTest(phrase=phrase):
                 self.assertIn(phrase, text)
 
+    def test_skill_carries_claim_integrity_checks(self) -> None:
+        text = " ".join(
+            (ROOT / "skills/design/SKILL.md").read_text(encoding="utf-8").split()
+        )
+        # Claim-integrity check IDs, each with phrases that must stay in the skill.
+        anchors = (
+            ("CI-01", "Every sentence about what a brief, the owner, a design, its content, or user research says, shows, or does must rest on a passage or element you can point to."),
+            ("CI-02", "Put only a source's exact words inside quotation marks, both in your reports and in the design itself"),
+            ("CI-03", "search all of it for counterexamples. The claim covers only what you searched; when that was less than all of it"),
+            ("CI-04", "Check them against a source, or say they come from memory. For a standard, name the version and the criterion or section you checked"),
+            ("CI-05", "open the primary source behind it, not only a page that repeats it"),
+            ("CI-05", "When a figure the owner supplied does not match the source it cites, point it out instead of changing the copy."),
+            ("CI-06", "must name what you compared against which source or version: for example, which foreground and background pairs you measured and how"),
+            ("CI-07", "When the owner disputes a finding or claim, recheck it before agreeing, as you would before defending it. Agreement is not verification."),
+            ("CI-08", "When you add or rewrite a factual claim, figure, quotation, or attribution in copy the owner will publish"),
+            ("CI-08", "check it against its source at that moment, even if you checked it earlier"),
+            ("CI-09", "state the strongest reading under which it is not a problem, such as a deliberate choice the brief supports, and drop the flag if that reading is plausible"),
+            ("CI-09", "When a flag depends on what the owner meant and the project context does not say, raise it as a question instead of asserting it."),
+            ("CI-09", "Once the owner rejects a flag, drop it; do not bring it back as a warning about how users might react unless new evidence appears."),
+            ("CI-09", "Neither a plausible reading nor the owner's rejection changes a measured result"),
+            ("CI-09", "There is no minimum number of findings."),
+            ("CI-10", "Before sending, compare what you are about to say with what you already said on the same topic."),
+        )
+        for check_id, anchor in anchors:
+            with self.subTest(check=check_id, anchor=anchor):
+                self.assertIn(anchor, text)
+
+    def test_skill_claim_integrity_text_is_self_contained(self) -> None:
+        text = (ROOT / "skills/design/SKILL.md").read_text(encoding="utf-8")
+        self.assertNotIn("universal-dev-architecture", text.casefold())
+        self.assertIsNone(re.search(r"\bUDA\b", text))
+
     def test_skill_declares_all_surface_modes_and_operations(self) -> None:
         text = (ROOT / "skills/design/SKILL.md").read_text(encoding="utf-8")
         for mode in ("Persuade", "Operate", "Read", "Experience"):
